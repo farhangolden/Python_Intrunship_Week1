@@ -196,35 +196,38 @@ def inventory_summary():
     print("Total Inventory Value: Rs.",total_value)
 
 # Main Menu
-while True:
+def main():
+    while True:
 
-    print("\n===== RETAIL INVENTORY MANAGER =====")
-    print("1.Add Product")
-    print("2.Display Products")
-    print("3.Search Product")
-    print("4.Update Product")
-    print("5.Delete Product")
-    print("6.Low Stock Report")
-    print("7.Inventory Summary")
-    print("8.Exit")
-    choice=input("\nEnter your choice: ")
+        print("\n===== RETAIL INVENTORY MANAGER =====")
+        print("1.Add Product")
+        print("2.Display Products")
+        print("3.Search Product")
+        print("4.Update Product")
+        print("5.Delete Product")
+        print("6.Low Stock Report")
+        print("7.Inventory Summary")
+        print("8.Exit")
+        choice=input("\nEnter your choice: ")
 
-    if choice=="1":
-        add_product()
-    elif choice=="2":
-        display_products()
-    elif choice=="3":
-        search_product()
-    elif choice=="4":
-        update_product()
-    elif choice=="5":
-        delete_product()
-    elif choice=="6":
-        low_stock_report()
-    elif choice=="7":
-        inventory_summary()
-    elif choice=="8":
-        print("Thank you for using Inventory Manager!")
-        break
-    else:
-        print("Enter Valid Opptions!")
+        if choice=="1":
+            add_product()
+        elif choice=="2":
+            display_products()
+        elif choice=="3":
+            search_product()
+        elif choice=="4":
+            update_product()
+        elif choice=="5":
+            delete_product()
+        elif choice=="6":
+            low_stock_report()
+        elif choice=="7":
+            inventory_summary()
+        elif choice=="8":
+            print("Thank you for using Inventory Manager!")
+            break
+        else:
+            print("Enter Valid Opptions!")
+if __name__=="__main__":
+    main()
